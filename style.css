@@ -99,6 +99,24 @@ main{
   /* border:3px solid #8da2ed; */
   border-radius: 20%;
   font-style: italic;
+
+
+	animation: animate_grow 2s infinite;
+}
+.heading:hover {
+	animation: none;
+}
+ 
+@keyframes animate_grow {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+	50% {
+		transform: scale3d(1.05, 1.05, 1.05);
+	}
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
 }
 .heading span{
   color: rgb(35, 145, 235);
