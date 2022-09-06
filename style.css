@@ -123,6 +123,7 @@ main{
   color: rgb(35, 145, 235);
 }
 .hero-image .list {
+  cursor: pointer;
   padding-left: 5px;
   padding-bottom: 16px;
   font-size: 1.4em;
@@ -130,7 +131,27 @@ main{
   max-width: 800px;
   font-style: italic;
   background-color: linear-gradient(21deg, #dd03e4, #5611ec);
+
+  
+  
 }
+.hero-image .list:hover {
+  animation: animate_grow 2s infinite;
+}
+  @keyframes animate_grow {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+    50% {
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+
+ 
+
 .hero-image .list:before { 
   content: '\21D2';
   color: red;
