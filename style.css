@@ -154,15 +154,16 @@ main{
 
 .hero-image .list:before { 
   content: '\21D2';
-  color: red;
+  color: #e40c49;
  } 
  .hero-image .name{
   text-align: center;
   width: 384px;
-  color: red;
+  color: #e40c49;
   font-size: 4rem;
   line-height: 3.5rem;
   font-style: italic;
+  margin-top: 5px;
  }
  .hero-image .name span{
   color: rgb(35, 145, 235);
@@ -181,7 +182,7 @@ main{
   content: "\2937";
 }
 .download:hover{
-  color:#e40c49;
+  color: #e40c49;
 }
 
 .intro {
