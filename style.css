@@ -25,7 +25,6 @@ main{
   margin: 0 0 40px;
   padding: 32px 0;
   font-style: italic;
-  
 }
 .block{
   height: 550px;
@@ -39,6 +38,7 @@ main{
   background-repeat: no-repeat;
   background-position: left;
   font-size: 2rem;
+
 }
 
 /* @media (max-width: 790px) {
@@ -101,26 +101,31 @@ main{
   border-radius: 20%;
   font-style: italic;
 
-
-	animation: animate_grow 2s infinite;
+  /* color: transparent;    
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(135deg, red, blue); */
+  
 }
 .heading:hover {
-	animation: none;
+  animation: animate_grow 2s infinite;
+	@keyframes animate_grow {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+    50% {
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
 }
  
-@keyframes animate_grow {
-	0% {
-		transform: scale3d(1, 1, 1);
-	}
-	50% {
-		transform: scale3d(1.05, 1.05, 1.05);
-	}
-	100% {
-		transform: scale3d(1, 1, 1);
-	}
-}
+
 .heading span{
   color: rgb(35, 145, 235);
+  font-size: 2.2rem;
 }
 .hero-image .list {
   cursor: pointer;
@@ -130,11 +135,9 @@ main{
   line-height: 1.4rem;
   max-width: 800px;
   font-style: italic;
-  background-color: linear-gradient(21deg, #dd03e4, #5611ec);
-
-  
-  
 }
+
+
 .hero-image .list:hover {
   animation: animate_grow 2s infinite;
 }
@@ -148,6 +151,7 @@ main{
     100% {
       transform: scale3d(1, 1, 1);
     }
+    
   }
 
  
