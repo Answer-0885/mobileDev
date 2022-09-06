@@ -146,6 +146,23 @@ main{
  .hero-image .name span{
   color: rgb(35, 145, 235);
  }
+
+ .download{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color:  rgb(35, 145, 235);
+}
+
+.download:before{
+  content: "\2713";
+}
+.download-2:before{
+  content: "\2937";
+}
+.download:hover{
+  color:#e40c49;
+}
+
 .intro {
   margin: 0 0 160px;
   padding-top: 40px;
