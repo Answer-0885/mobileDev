@@ -31,7 +31,7 @@ main{
 }
 .page-header a {
   margin-right: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
   padding-top: 10px;
   color: #0fead4;
   text-decoration: none;
@@ -48,8 +48,7 @@ main{
  } */
 .page-header a:focus,
 .page-header a:hover {
-  border-bottom: 1px solid #8da2ed;
-  filter: hue-rotate(50deg);
+  filter: hue-rotate(250deg);
 }
 
 .page-header a:active {
@@ -58,13 +57,15 @@ main{
 }
 
 .header-email {
-  padding-left: 30px;
+  padding-left: 60px;
   background-image: url("img/icon-email-header.svg");
+  background-size: 8%;
 }
 
 .header-phone {
-  padding-left: 25px;
+  padding-left: 50px;
   background-image: url("img/icon-phone-header.svg");
+  background-size: 8%;
 }
 
 .hero-image {
@@ -109,6 +110,7 @@ main{
   line-height: 1.4rem;
   max-width: 800px;
   font-style: italic;
+  background-color: linear-gradient(21deg, #dd03e4, #5611ec);
 }
 .hero-image .list:before { 
   content: '\21D2';
@@ -121,6 +123,9 @@ main{
   font-size: 4rem;
   line-height: 3.5rem;
   font-style: italic;
+ }
+ .hero-image .name span{
+  color: rgb(35, 145, 235);
  }
 .intro {
   margin: 0 0 160px;
@@ -466,8 +471,7 @@ main{
 
 .page-footer a:focus,
 .page-footer a:hover {
-  opacity: 1;
-  border-bottom: 1px solid #ffffff;
+  filter: hue-rotate(250deg);
 }
 
 .page-footer a:active {
