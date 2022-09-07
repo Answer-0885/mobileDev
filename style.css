@@ -78,7 +78,7 @@ main{
   margin-right: 50px;
   width: 384px;
   height: 576px;
-  border: 5px solid rgb(227, 14, 14);
+  border: 5px solid #e40c49;;
   border-radius: 10%;
 }
 .hero-image .container {
@@ -92,6 +92,7 @@ main{
   margin-top: 0px;
   /* width: 928px; */
   margin-right: 10px;
+  margin-bottom: 10px;
   font-size: 90px;
   line-height: 120px;
   letter-spacing: -2px;
@@ -123,11 +124,18 @@ main{
 }
  
 
-.heading span{
+.hero-image span{
   color: rgb(35, 145, 235);
   font-size: 2.2rem;
 }
+.hero-image .span2{
+  color: #e40c49;
+}
+.hero-image .description{
+  font-size: 1.4rem;
+}
 .hero-image .list {
+  margin: 0 auto;
   cursor: pointer;
   padding-left: 5px;
   padding-bottom: 16px;
@@ -154,8 +162,6 @@ main{
     
   }
 
- 
-
 .hero-image .list:before { 
   content: '\21D2';
   color: #e40c49;
@@ -164,8 +170,8 @@ main{
   text-align: center;
   width: 384px;
   color: #e40c49;
-  font-size: 4rem;
-  line-height: 3.5rem;
+  font-size: 3rem;
+  line-height: 3rem;
   font-style: italic;
   margin-top: 5px;
  }
